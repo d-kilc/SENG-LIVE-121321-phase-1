@@ -115,101 +115,106 @@
 
         // console.log(`This song ${favorite ? 'is' : 'is not'} my favorite!`)
 
-console.log("------------------------");
-console.log("⬇️ Break Out Activities ⬇️");
-console.log("🚨 Comment Out Lecture Code Above Before Starting 🚨");
-console.log("💡 Use console.log() To Check Answers 💡");
-console.log("------------------------");
-
-// For the activities below, I've ommitted the let/const keywords and replaced
-// them with ____. Go ahead and fill them in with the choice you think is appropriate
-
-// 🚧 Break Out Activity 1: Using if...else
-
-    // 🚧 "time" will be a random number between 0 and 24
-    // const time = Math.ceil(Math.random()*24);
-    // log a message to the console indicating whether "time" is in the AM or PM
-    // uncomment the code between the 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 and
-    // fill in the ❓ with the proper expression.
-
-
-    // this line of code generates a random number between 0 and 24 and assigns its value to `time`
-    const time = Math.ceil(Math.random()*24);
-    // // 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧
-    // if (❓) {
-
-        // console.log(`${time} is in the AM.`)
-
-    // In all other cases...
-    // } else {
-
-        // console.log(`${time} is in the PM.`)
-
-    // }
-    // // 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧
-
-
-
-    // // ✨ BONUS: Try refactoring the above expression using a ternary operator.
-
-    // // ternary version
-    
-
-    // // 🚨 Be sure to comment out any code above before proceeding to the next activity.
-
-// 🚧 Break Out Activity 2: Using if...else if...else
-
-    // We are given variables today, yesterday, tomorrow, and otherDate
-
-    // Our task is to print:
-
-    // - "This date is in the past" if otherDate is before today.
-    // - "This date is in the future" if otherDate is after today.
-    // - "This date is today!" if otherDate is today.
-
-    // 1. replace the ____ with `let` or `const` below
-    // 2. complete the conditional logic below the variable assignments
-    // 3. and then try reassigning otherDate to different values to test your logic
-    // to different values to
-
-    // // 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧
-
-    // ____ today = new Date();
-    // ____ year = today.getFullYear();
-    // ____ month = today.getMonth();
-    // ____ day = today.getDate();
-
-    // ____ yesterday = new Date(`${year}-${month}-${day-1}`);
-    // ____ tomorrow = new Date(`${year}-${month}-${day+1}`);
-    // ____ otherDate = yesterday;
-
-    // // 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧
-
-
-
-    // // 🚨 Format your if...else if...else conditional below
-    
-
-
-    // // 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧
-
-    // if (____) {
-    //     console.log('This date is in the past')
-    // } else if (____) {
-    //     console.log('This date is in the future')
-    // } else {
-    //     console.log('This date is today!')
-    // }
-
-    // otherDate = tomorrow;
-    
-    // if (____) {
-    //     console.log('This date is in the past')
-    // } else if (____) {
-    //     console.log('This date is in the future')
-    // } else {
-    //     console.log('This date is today!')
-    // }
-
-    // // 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧
-   
+        console.log("------------------------");
+        console.log("⬇️ Break Out Activities ⬇️");
+        console.log("🚨 Comment Out Lecture Code Above Before Starting 🚨");
+        console.log("💡 Use console.log() To Check Answers 💡");
+        console.log("------------------------");
+        
+        // For the activities below, I've ommitted the let/const keywords and replaced
+        // them with ____. Go ahead and fill them in with the choice you think is appropriate
+        
+        // 🚧 Break Out Activity 1: Using if...else
+        
+            // 🚧 "time" will be a random number between 0 and 24
+            //const time = Math.ceil(Math.random()*24);
+            // log a message to the console indicating whether "time" is in the AM or PM
+            // uncomment the code between the 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 and
+            // fill in the ❓ with the proper expression.
+        
+            // this line of code generates a random number between 0 and 24 and assigns its value to `time`
+            const time = Math.ceil(Math.random()*24);
+            // 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧
+            if (time < 12) {
+        
+                console.log(`${time} is in the AM.`)
+        
+            //In all other cases...
+            } else {
+        
+                console.log(`${time} is in the PM.`)
+        
+            }
+            // // 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧
+        
+        
+        
+            // // ✨ BONUS: Try refactoring the above expression using a ternary operator.
+        
+            // // ternary version
+            console.log(`The time is in the ${time < 12 ? 'AM' : 'PM'}`);
+        
+            // // 🚨 Be sure to comment out any code above before proceeding to the next activity.
+        
+        // 🚧 Break Out Activity 2: Using if...else if...else
+        
+            // We are given variables today, yesterday, tomorrow, and otherDate
+        
+            // Our task is to print:
+        
+            // - "This date is in the past" if otherDate is before today.
+            // - "This date is in the future" if otherDate is after today.
+            // - "This date is today!" if otherDate is today.
+        
+            // 1. replace the ____ with `let` or `const` below
+            // 2. complete the conditional logic below the variable assignments
+            // 3. and then try reassigning otherDate to different values to test your logic
+            // to different values to
+        
+            // // 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧
+        
+            const today = new Date();
+            console.log(today);
+            const year = today.getFullYear();
+            console.log("Year: ", year);
+            const month = today.getMonth() + 1;
+            console.log("Month: ", month);
+            const day = today.getDate();
+            console.log("Date: ", day);
+        
+            const yesterday = new Date(`${year}-${month}-${day-1}`);
+            console.log("Yesterday: ", yesterday)
+            const tomorrow = new Date(`${year}-${month}-${day+1}`);
+            console.log("Tomorrow: ", tomorrow)
+            let otherDate = yesterday;
+        
+            // // 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧
+        
+        
+        
+            // // 🚨 Format your if...else if...else conditional below
+            
+        
+        
+            // // 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧
+        
+            if (otherDate < today) {
+                console.log('This date is in the past')
+            } else if (otherDate > today) {
+                console.log('This date is in the future')
+            } else {
+                console.log('This date is today!')
+            }
+        
+            otherDate = tomorrow;
+            
+            if (otherDate < today) {
+                console.log('This date is in the past')
+            } else if (otherDate > today) {
+                console.log('This date is in the future')
+            } else {
+                console.log('This date is today!')
+            }
+        
+            // // 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧
+           
